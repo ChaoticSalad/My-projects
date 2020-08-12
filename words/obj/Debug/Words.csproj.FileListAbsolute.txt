@@ -1,0 +1,10 @@
+D:\C# Pr\LearningC#Book\ExerciseWords\bin\Debug\ExerciseWords.exe.config
+D:\C# Pr\LearningC#Book\ExerciseWords\bin\Debug\ExerciseWords.exe
+D:\C# Pr\LearningC#Book\ExerciseWords\bin\Debug\ExerciseWords.pdb
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\Words.csprojAssemblyReference.cache
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\Words.Form1.resources
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\ExerciseWords.Properties.Resources.resources
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\Words.csproj.GenerateResource.cache
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\Words.csproj.CoreCompileInputs.cache
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\ExerciseWords.exe
+D:\C# Pr\LearningC#Book\ExerciseWords\obj\Debug\ExerciseWords.pdb
