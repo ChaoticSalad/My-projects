@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage.csproj", "{195F65E7-D2BE-43A7-BEFF-38A2CC79A517}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{195F65E7-D2BE-43A7-BEFF-38A2CC79A517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195F65E7-D2BE-43A7-BEFF-38A2CC79A517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195F65E7-D2BE-43A7-BEFF-38A2CC79A517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195F65E7-D2BE-43A7-BEFF-38A2CC79A517}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B62E7D0-B225-40BA-AFE9-CB8E4E558340}
+	EndGlobalSection
+EndGlobal
