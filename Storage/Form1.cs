@@ -22,10 +22,6 @@ namespace Storage
         private int rowIndex;
         public Form1()
         {
-            ProductExts = ProductExt.GetProductExts();
-            ProductsEntered = Product.GetProductsMod("STATUS", "Entered");
-            ProductsStorage = Product.GetProductsMod("STATUS", "Storage");
-            ProductsSold = Product.GetProductsMod("STATUS", "Sold");
             InitializeComponent();
         }
 
@@ -37,14 +33,7 @@ namespace Storage
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var productExts = this.ProductExts;
-            dgvFull.DataSource = productExts;
-            var productsEntr = this.ProductsEntered;
-            dgvEntered.DataSource = productsEntr;
-            var productsStr = this.ProductsStorage;
-            dgvStorage.DataSource = productsStr;
-            var productsSold = this.ProductsSold;
-            dgvSold.DataSource = productsSold;
+            RefreshForm();
         }
 
         private void btnAddEnter_Click(object sender, EventArgs e)
@@ -87,18 +76,38 @@ namespace Storage
 
         private void contextSell_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem.Name.ToString() == "Sell")
-            {
-                int idSell = Convert.ToInt32(dgvStorage.Rows[rowIndex].Cells[0].Value);
-                Product.SellProduct(idSell);
-            }
+            int idSell = Convert.ToInt32(dgvStorage.Rows[rowIndex].Cells[0].Value);
+            Product.SellProduct(idSell);
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
             this.Hide();
             formReport = new FormReport();
-            formReport.Show();
+            formReport.ShowDialog();
+            formReport = null;
+            this.Show();
+        }
+
+        private void RefreshForm()
+        {
+            ProductExts = ProductExt.GetProductExts();
+            ProductsEntered = Product.GetProductsMod("STATUS", "Entered");
+            ProductsStorage = Product.GetProductsMod("STATUS", "Storage");
+            ProductsSold = Product.GetProductsMod("STATUS", "Sold");
+            var productExts = this.ProductExts;
+            dgvFull.DataSource = productExts;
+            var productsEntr = this.ProductsEntered;
+            dgvEntered.DataSource = productsEntr;
+            var productsStr = this.ProductsStorage;
+            dgvStorage.DataSource = productsStr;
+            var productsSold = this.ProductsSold;
+            dgvSold.DataSource = productsSold;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            RefreshForm();
         }
     }
 }

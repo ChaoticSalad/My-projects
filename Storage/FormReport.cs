@@ -14,10 +14,8 @@ namespace Storage
     public partial class FormReport : Form
     {
         public List<ProductExt> ProductExts;
-        Form1 form1;
         public FormReport()
         {
-            form1 = new Form1();
             ProductExts = ProductExt.GetProductExts();
             InitializeComponent();
         }
@@ -26,13 +24,6 @@ namespace Storage
         {
             var productExts = this.ProductExts;
             dgvReport.DataSource = productExts;
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            form1 = new Form1();
-            form1.Show();
         }
 
         private void btnFilter_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ namespace Storage
                 this.Close();
             }
             else
-                MessageBox.Show($"Please, check entered values, {dtpAdd.Value.Date}", "Wrong values entered");
+                MessageBox.Show($"Please, check entered values", "Wrong values entered");
         }
     }
 }

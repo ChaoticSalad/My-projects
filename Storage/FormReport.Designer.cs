@@ -42,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbStatus = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
             this.dtpTo = new System.Windows.Forms.DateTimePicker();
             this.btnFilter = new System.Windows.Forms.Button();
@@ -177,16 +176,6 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "Status";
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(12, 16);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 22;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // dtpFrom
             // 
             this.dtpFrom.Enabled = false;
@@ -233,7 +222,6 @@
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.dtpTo);
             this.Controls.Add(this.dtpFrom);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.label2);
@@ -264,7 +252,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.DateTimePicker dtpFrom;
         private System.Windows.Forms.DateTimePicker dtpTo;
         private System.Windows.Forms.Button btnFilter;
