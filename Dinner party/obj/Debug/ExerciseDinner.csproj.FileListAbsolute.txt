@@ -1,0 +1,10 @@
+D:\C# Pr\LearningC#Book\ExerciseDinner\bin\Debug\ExerciseDinner.exe.config
+D:\C# Pr\LearningC#Book\ExerciseDinner\bin\Debug\ExerciseDinner.exe
+D:\C# Pr\LearningC#Book\ExerciseDinner\bin\Debug\ExerciseDinner.pdb
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.csprojAssemblyReference.cache
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.Form1.resources
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.Properties.Resources.resources
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.csproj.GenerateResource.cache
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.csproj.CoreCompileInputs.cache
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.exe
+D:\C# Pr\LearningC#Book\ExerciseDinner\obj\Debug\ExerciseDinner.pdb
