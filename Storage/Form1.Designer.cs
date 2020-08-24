@@ -28,23 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpAll = new System.Windows.Forms.TabPage();
             this.dgvFull = new System.Windows.Forms.DataGridView();
-            this.txtId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtCategoryDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtCompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tpEntered = new System.Windows.Forms.TabPage();
             this.btnAddEnter = new System.Windows.Forms.Button();
             this.dgvEntered = new System.Windows.Forms.DataGridView();
             this.tpStorage = new System.Windows.Forms.TabPage();
             this.dgvStorage = new System.Windows.Forms.DataGridView();
+            this.tpSold = new System.Windows.Forms.TabPage();
+            this.dgvSold = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtIdStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtProductNameStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtStatusStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,11 +49,34 @@
             this.txtQuantityStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCategoryStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCompanyStorage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tpSold = new System.Windows.Forms.TabPage();
-            this.dgvSold = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productExtBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productExtBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDescDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tpAll.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFull)).BeginInit();
@@ -66,6 +86,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStorage)).BeginInit();
             this.tpSold.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productExtBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productExtBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -95,86 +120,29 @@
             // 
             this.dgvFull.AllowUserToAddRows = false;
             this.dgvFull.AllowUserToDeleteRows = false;
+            this.dgvFull.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFull.AutoGenerateColumns = false;
             this.dgvFull.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFull.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.txtId,
-            this.txtProductName,
-            this.txtStatus,
-            this.txtDate,
-            this.txtQuantity,
-            this.txtCategoryName,
-            this.txtCategoryDescription,
-            this.txtCompanyName,
-            this.txtCountry});
+            this.idDataGridViewTextBoxColumn1,
+            this.nameDataGridViewTextBoxColumn1,
+            this.quantityDataGridViewTextBoxColumn1,
+            this.statusDataGridViewTextBoxColumn1,
+            this.dateDataGridViewTextBoxColumn1,
+            this.categoryDataGridViewTextBoxColumn1,
+            this.categoryDescDataGridViewTextBoxColumn,
+            this.companyDataGridViewTextBoxColumn1,
+            this.companyCountryDataGridViewTextBoxColumn});
+            this.dgvFull.DataSource = this.productExtBindingSource1;
             this.dgvFull.Location = new System.Drawing.Point(6, 6);
             this.dgvFull.Name = "dgvFull";
             this.dgvFull.ReadOnly = true;
             this.dgvFull.Size = new System.Drawing.Size(1166, 423);
             this.dgvFull.TabIndex = 0;
-            // 
-            // txtId
-            // 
-            this.txtId.DataPropertyName = "Id";
-            this.txtId.HeaderText = "Id";
-            this.txtId.Name = "txtId";
-            this.txtId.ReadOnly = true;
-            // 
-            // txtProductName
-            // 
-            this.txtProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.txtProductName.DataPropertyName = "Name";
-            this.txtProductName.HeaderText = "ProductName";
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.ReadOnly = true;
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.DataPropertyName = "Status";
-            this.txtStatus.HeaderText = "Status";
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.ReadOnly = true;
-            // 
-            // txtDate
-            // 
-            this.txtDate.DataPropertyName = "Date";
-            this.txtDate.HeaderText = "Date";
-            this.txtDate.Name = "txtDate";
-            this.txtDate.ReadOnly = true;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.DataPropertyName = "Quantity";
-            this.txtQuantity.HeaderText = "Quantity";
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.ReadOnly = true;
-            // 
-            // txtCategoryName
-            // 
-            this.txtCategoryName.DataPropertyName = "Category";
-            this.txtCategoryName.HeaderText = "CategoryName";
-            this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.ReadOnly = true;
-            // 
-            // txtCategoryDescription
-            // 
-            this.txtCategoryDescription.DataPropertyName = "CategoryDesc";
-            this.txtCategoryDescription.HeaderText = "CategoryDescription";
-            this.txtCategoryDescription.Name = "txtCategoryDescription";
-            this.txtCategoryDescription.ReadOnly = true;
-            // 
-            // txtCompanyName
-            // 
-            this.txtCompanyName.DataPropertyName = "Company";
-            this.txtCompanyName.HeaderText = "CompanyName";
-            this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.ReadOnly = true;
-            // 
-            // txtCountry
-            // 
-            this.txtCountry.DataPropertyName = "CompanyCountry";
-            this.txtCountry.HeaderText = "Country";
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.ReadOnly = true;
+            this.dgvFull.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvFull_CellMouseDown);
+            this.dgvFull.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvFull_MouseClick);
             // 
             // tpEntered
             // 
@@ -202,7 +170,17 @@
             // 
             this.dgvEntered.AllowUserToAddRows = false;
             this.dgvEntered.AllowUserToDeleteRows = false;
+            this.dgvEntered.AutoGenerateColumns = false;
             this.dgvEntered.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEntered.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn,
+            this.categoryDataGridViewTextBoxColumn,
+            this.companyDataGridViewTextBoxColumn});
+            this.dgvEntered.DataSource = this.productBindingSource2;
             this.dgvEntered.Location = new System.Drawing.Point(7, 35);
             this.dgvEntered.Name = "dgvEntered";
             this.dgvEntered.ReadOnly = true;
@@ -241,6 +219,68 @@
             this.dgvStorage.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvStorage_CellMouseDown);
             this.dgvStorage.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvStorage_MouseClick);
             // 
+            // tpSold
+            // 
+            this.tpSold.Controls.Add(this.dgvSold);
+            this.tpSold.Location = new System.Drawing.Point(4, 22);
+            this.tpSold.Name = "tpSold";
+            this.tpSold.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSold.Size = new System.Drawing.Size(1178, 435);
+            this.tpSold.TabIndex = 3;
+            this.tpSold.Text = "Sold products";
+            this.tpSold.UseVisualStyleBackColor = true;
+            // 
+            // dgvSold
+            // 
+            this.dgvSold.AllowUserToAddRows = false;
+            this.dgvSold.AllowUserToDeleteRows = false;
+            this.dgvSold.AutoGenerateColumns = false;
+            this.dgvSold.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSold.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.nameDataGridViewTextBoxColumn2,
+            this.quantityDataGridViewTextBoxColumn2,
+            this.statusDataGridViewTextBoxColumn2,
+            this.dateDataGridViewTextBoxColumn2,
+            this.categoryDataGridViewTextBoxColumn2,
+            this.companyDataGridViewTextBoxColumn2});
+            this.dgvSold.DataSource = this.productBindingSource1;
+            this.dgvSold.Location = new System.Drawing.Point(6, 6);
+            this.dgvSold.Name = "dgvSold";
+            this.dgvSold.ReadOnly = true;
+            this.dgvSold.Size = new System.Drawing.Size(1166, 423);
+            this.dgvSold.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(12, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(98, 23);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Add product";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnReport
+            // 
+            this.btnReport.Location = new System.Drawing.Point(116, 3);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(75, 23);
+            this.btnReport.TabIndex = 1;
+            this.btnReport.Text = "Report";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(197, 3);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // txtIdStorage
             // 
             this.txtIdStorage.DataPropertyName = "Id";
@@ -252,7 +292,7 @@
             // 
             this.txtProductNameStorage.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.txtProductNameStorage.DataPropertyName = "Name";
-            this.txtProductNameStorage.HeaderText = "ProductName";
+            this.txtProductNameStorage.HeaderText = "Name";
             this.txtProductNameStorage.Name = "txtProductNameStorage";
             this.txtProductNameStorage.ReadOnly = true;
             // 
@@ -291,57 +331,189 @@
             this.txtCompanyStorage.Name = "txtCompanyStorage";
             this.txtCompanyStorage.ReadOnly = true;
             // 
-            // tpSold
+            // productBindingSource
             // 
-            this.tpSold.Controls.Add(this.dgvSold);
-            this.tpSold.Location = new System.Drawing.Point(4, 22);
-            this.tpSold.Name = "tpSold";
-            this.tpSold.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSold.Size = new System.Drawing.Size(1178, 435);
-            this.tpSold.TabIndex = 3;
-            this.tpSold.Text = "Sold products";
-            this.tpSold.UseVisualStyleBackColor = true;
+            this.productBindingSource.DataSource = typeof(Storage.Product);
             // 
-            // dgvSold
+            // productExtBindingSource
             // 
-            this.dgvSold.AllowUserToAddRows = false;
-            this.dgvSold.AllowUserToDeleteRows = false;
-            this.dgvSold.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSold.Location = new System.Drawing.Point(6, 6);
-            this.dgvSold.Name = "dgvSold";
-            this.dgvSold.ReadOnly = true;
-            this.dgvSold.Size = new System.Drawing.Size(1166, 423);
-            this.dgvSold.TabIndex = 0;
+            this.productExtBindingSource.DataSource = typeof(Storage.ProductExt);
             // 
-            // btnAdd
+            // productExtBindingSource1
             // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 3);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(98, 23);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Add product";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.productExtBindingSource1.DataSource = typeof(Storage.ProductExt);
             // 
-            // btnReport
+            // idDataGridViewTextBoxColumn1
             // 
-            this.btnReport.Location = new System.Drawing.Point(116, 3);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(75, 23);
-            this.btnReport.TabIndex = 1;
-            this.btnReport.Text = "Report";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // btnUpdate
+            // nameDataGridViewTextBoxColumn1
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(197, 3);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.nameDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
+            this.nameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn1
+            // 
+            this.quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
+            this.quantityDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn1
+            // 
+            this.statusDataGridViewTextBoxColumn1.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn1.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn1.Name = "statusDataGridViewTextBoxColumn1";
+            this.statusDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dateDataGridViewTextBoxColumn1
+            // 
+            this.dateDataGridViewTextBoxColumn1.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn1.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn1.Name = "dateDataGridViewTextBoxColumn1";
+            this.dateDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn1
+            // 
+            this.categoryDataGridViewTextBoxColumn1.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn1.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn1.Name = "categoryDataGridViewTextBoxColumn1";
+            this.categoryDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // categoryDescDataGridViewTextBoxColumn
+            // 
+            this.categoryDescDataGridViewTextBoxColumn.DataPropertyName = "CategoryDesc";
+            this.categoryDescDataGridViewTextBoxColumn.HeaderText = "CategoryDesc";
+            this.categoryDescDataGridViewTextBoxColumn.Name = "categoryDescDataGridViewTextBoxColumn";
+            this.categoryDescDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // companyDataGridViewTextBoxColumn1
+            // 
+            this.companyDataGridViewTextBoxColumn1.DataPropertyName = "Company";
+            this.companyDataGridViewTextBoxColumn1.HeaderText = "Company";
+            this.companyDataGridViewTextBoxColumn1.Name = "companyDataGridViewTextBoxColumn1";
+            this.companyDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // companyCountryDataGridViewTextBoxColumn
+            // 
+            this.companyCountryDataGridViewTextBoxColumn.DataPropertyName = "CompanyCountry";
+            this.companyCountryDataGridViewTextBoxColumn.HeaderText = "CompanyCountry";
+            this.companyCountryDataGridViewTextBoxColumn.Name = "companyCountryDataGridViewTextBoxColumn";
+            this.companyCountryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productBindingSource1
+            // 
+            this.productBindingSource1.DataSource = typeof(Storage.Product);
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn2
+            // 
+            this.nameDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn2.Name = "nameDataGridViewTextBoxColumn2";
+            this.nameDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn2
+            // 
+            this.quantityDataGridViewTextBoxColumn2.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.Name = "quantityDataGridViewTextBoxColumn2";
+            this.quantityDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn2
+            // 
+            this.statusDataGridViewTextBoxColumn2.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn2.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn2.Name = "statusDataGridViewTextBoxColumn2";
+            this.statusDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dateDataGridViewTextBoxColumn2
+            // 
+            this.dateDataGridViewTextBoxColumn2.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn2.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn2.Name = "dateDataGridViewTextBoxColumn2";
+            this.dateDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn2
+            // 
+            this.categoryDataGridViewTextBoxColumn2.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn2.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn2.Name = "categoryDataGridViewTextBoxColumn2";
+            this.categoryDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // companyDataGridViewTextBoxColumn2
+            // 
+            this.companyDataGridViewTextBoxColumn2.DataPropertyName = "Company";
+            this.companyDataGridViewTextBoxColumn2.HeaderText = "Company";
+            this.companyDataGridViewTextBoxColumn2.Name = "companyDataGridViewTextBoxColumn2";
+            this.companyDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // productBindingSource2
+            // 
+            this.productBindingSource2.DataSource = typeof(Storage.Product);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // companyDataGridViewTextBoxColumn
+            // 
+            this.companyDataGridViewTextBoxColumn.DataPropertyName = "Company";
+            this.companyDataGridViewTextBoxColumn.HeaderText = "Company";
+            this.companyDataGridViewTextBoxColumn.Name = "companyDataGridViewTextBoxColumn";
+            this.companyDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Form1
             // 
@@ -364,6 +536,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvStorage)).EndInit();
             this.tpSold.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productExtBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productExtBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -380,16 +557,27 @@
         private System.Windows.Forms.DataGridView dgvStorage;
         private System.Windows.Forms.TabPage tpSold;
         private System.Windows.Forms.DataGridView dgvSold;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtQuantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtCategoryName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtCategoryDescription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtCompanyName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txtCountry;
         private System.Windows.Forms.Button btnAddEnter;
+        private System.Windows.Forms.Button btnReport;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDescDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companyCountryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource productExtBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource productBindingSource2;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtIdStorage;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtProductNameStorage;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtStatusStorage;
@@ -397,8 +585,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn txtQuantityStorage;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtCategoryStorage;
         private System.Windows.Forms.DataGridViewTextBoxColumn txtCompanyStorage;
-        private System.Windows.Forms.Button btnReport;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companyDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource productBindingSource1;
+        private System.Windows.Forms.BindingSource productBindingSource;
+        private System.Windows.Forms.BindingSource productExtBindingSource;
     }
 }
 

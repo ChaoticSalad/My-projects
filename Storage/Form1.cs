@@ -19,7 +19,10 @@ namespace Storage
         FormReport formReport;
         FormAddEntr formAdd;
         FormCreate formCreate;
+        FormEdit formEdit;
         private int rowIndex;
+        private int rowIndexEdit;
+        public static int IdSell;
         public Form1()
         {
             InitializeComponent();
@@ -108,6 +111,46 @@ namespace Storage
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             RefreshForm();
+        }
+
+       
+        private void dgvFull_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var dataGrid = (DataGridView)sender;
+            if (e.Button == MouseButtons.Right)
+            {
+                var row = dataGrid.Rows[e.RowIndex];
+                if (e.ColumnIndex == -1)
+                    dataGrid.CurrentCell = row.Cells[1];
+                else
+                    dataGrid.CurrentCell = row.Cells[e.ColumnIndex];
+                row.Selected = true;
+                dataGrid.Focus();
+                dgvFull.Rows[e.RowIndex].Selected = true;
+                rowIndexEdit = e.RowIndex;
+                dgvFull.CurrentCell = dgvFull.Rows[e.RowIndex].Cells[1];
+            }
+        }
+        private void dgvFull_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ContextMenuStrip contextMenu = new ContextMenuStrip();
+                int currentMouseOverRow = dgvFull.HitTest(e.X, e.Y).RowIndex;
+                if (currentMouseOverRow >= 0)
+                {
+                    contextMenu.Items.Add("Action ").Name = "Action";
+                }
+                contextMenu.Show(dgvFull, new Point(e.X, e.Y));
+                contextMenu.ItemClicked += new ToolStripItemClickedEventHandler(contextAction_ItemClicked);
+            }
+        }
+
+        private void contextAction_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            IdSell = Convert.ToInt32(dgvFull.Rows[rowIndexEdit].Cells[0].Value);
+            formEdit = new FormEdit();
+            formEdit.ShowDialog();
         }
     }
 }

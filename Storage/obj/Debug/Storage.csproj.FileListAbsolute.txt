@@ -24,3 +24,4 @@ D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.csproj.GenerateResou
 D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.csproj.CoreCompileInputs.cache
 D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.exe
 D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.pdb
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.FormEdit.resources
