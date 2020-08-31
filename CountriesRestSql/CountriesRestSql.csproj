@@ -69,11 +69,6 @@
     </Compile>
     <Compile Include="CountryClass.cs" />
     <Compile Include="CountriesDbContext.cs" />
-    <Compile Include="CRMCountriesDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CRMCountriesDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DBCountriesModels.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,17 +118,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="CRMCountriesDataSet.xsc">
-      <DependentUpon>CRMCountriesDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CRMCountriesDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CRMCountriesDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CRMCountriesDataSet.xss">
-      <DependentUpon>CRMCountriesDataSet.xsd</DependentUpon>
-    </None>
     <EntityDeploy Include="DBCountriesModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DBCountriesModels.Designer.cs</LastGenOutput>

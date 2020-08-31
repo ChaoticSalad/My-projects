@@ -16,3 +16,21 @@ D:\C# Pr\WorkTest\CountriesRestSql\bin\Debug\EntityFramework.dll
 D:\C# Pr\WorkTest\CountriesRestSql\bin\Debug\EntityFramework.SqlServer.dll
 D:\C# Pr\WorkTest\CountriesRestSql\bin\Debug\EntityFramework.xml
 D:\C# Pr\WorkTest\CountriesRestSql\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\CountriesRestSql.exe.config
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\CountriesRestSql.exe
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\CountriesRestSql.pdb
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\EntityFramework.dll
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\Newtonsoft.Json.dll
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\EntityFramework.xml
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\bin\Debug\Newtonsoft.Json.xml
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.csprojAssemblyReference.cache
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.Form1.resources
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.FormAdd.resources
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.Properties.Resources.resources
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.csproj.GenerateResource.cache
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.csproj.CoreCompileInputs.cache
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.csproj.CopyComplete
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.exe
+D:\C# Pr\Git Projects\My-projects\CountriesRestSql\obj\Debug\CountriesRestSql.pdb
