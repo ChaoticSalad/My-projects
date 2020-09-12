@@ -12,9 +12,6 @@ namespace CountriesRestSql
 {
     public partial class Form1 : Form
     {
-        //Country countryModel = new Country();
-        //City cityModel = new City();
-        //Region regionModel = new Region();
 
         public Form1()
         {

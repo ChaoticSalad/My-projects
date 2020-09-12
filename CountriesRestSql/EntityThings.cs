@@ -19,7 +19,7 @@ namespace CountriesRestSql
         /// <returns>String if country added or edited in DB</returns>
         public static string AddCountryToDB(CountryClass foundCountry)
         {
-            bool Edited = false;
+            bool edited = false;
             using (var context = new CountriesDbContext())
             {
                 City city;
@@ -61,7 +61,7 @@ namespace CountriesRestSql
                     country.Area = foundCountry.Area;
                     country.Population = foundCountry.Population;
                     country.RegionId = region.Id;
-                    Edited = true;
+                    edited = true;
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace CountriesRestSql
 
                 context.SaveChanges();
             }
-            if (Edited)
+            if (edited)
                 return "Country was edited in the DB";
             else
                 return "Country was added to the DB";        
