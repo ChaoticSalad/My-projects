@@ -1,0 +1,10 @@
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.csprojAssemblyReference.cache
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.Form1.resources
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.Properties.Resources.resources
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.csproj.GenerateResource.cache
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.csproj.CoreCompileInputs.cache
+D:\C# Pr\Git Projects\My-projects\Currency\bin\Debug\Currency.exe.config
+D:\C# Pr\Git Projects\My-projects\Currency\bin\Debug\Currency.exe
+D:\C# Pr\Git Projects\My-projects\Currency\bin\Debug\Currency.pdb
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.exe
+D:\C# Pr\Git Projects\My-projects\Currency\obj\Debug\Currency.pdb
