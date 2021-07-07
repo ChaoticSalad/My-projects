@@ -1,0 +1,27 @@
+D:\C# Pr\WorkTest\Storage\bin\Debug\Storage.exe.config
+D:\C# Pr\WorkTest\Storage\bin\Debug\Storage.exe
+D:\C# Pr\WorkTest\Storage\bin\Debug\Storage.pdb
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.csprojAssemblyReference.cache
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.Form1.resources
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.FormCreate.resources
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.Properties.Resources.resources
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.csproj.GenerateResource.cache
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.csproj.CoreCompileInputs.cache
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.exe
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.pdb
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.FormAddEntr.resources
+D:\C# Pr\WorkTest\Storage\obj\Debug\Storage.FormReport.resources
+D:\C# Pr\Git Projects\My-projects\Storage\bin\Debug\Storage.exe.config
+D:\C# Pr\Git Projects\My-projects\Storage\bin\Debug\Storage.exe
+D:\C# Pr\Git Projects\My-projects\Storage\bin\Debug\Storage.pdb
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.csprojAssemblyReference.cache
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.Form1.resources
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.FormAddEntr.resources
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.FormCreate.resources
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.FormReport.resources
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.Properties.Resources.resources
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.csproj.GenerateResource.cache
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.csproj.CoreCompileInputs.cache
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.exe
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.pdb
+D:\C# Pr\Git Projects\My-projects\Storage\obj\Debug\Storage.FormEdit.resources
