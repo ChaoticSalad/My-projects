@@ -1,0 +1,10 @@
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.csprojAssemblyReference.cache
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.Properties.Resources.resources
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.csproj.GenerateResource.cache
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.csproj.CoreCompileInputs.cache
+D:\C# Pr\LearningC#Book\BeeHive\bin\Debug\BeeHive.exe.config
+D:\C# Pr\LearningC#Book\BeeHive\bin\Debug\BeeHive.exe
+D:\C# Pr\LearningC#Book\BeeHive\bin\Debug\BeeHive.pdb
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.Form1.resources
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.exe
+D:\C# Pr\LearningC#Book\BeeHive\obj\Debug\BeeHive.pdb
