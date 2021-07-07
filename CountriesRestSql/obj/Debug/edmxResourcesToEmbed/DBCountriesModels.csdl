@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CRMCountriesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Countries" Relationship="Self.FK_Countries_Cities" FromRole="Cities" ToRole="Countries" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Code" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <Property Name="Area" Type="Double" Nullable="false" />
+    <Property Name="Population" Type="Int32" Nullable="false" />
+    <Property Name="RegionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Countries_Cities" FromRole="Countries" ToRole="Cities" />
+    <NavigationProperty Name="Region" Relationship="Self.FK_Countries_Regions" FromRole="Countries" ToRole="Regions" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Countries" Relationship="Self.FK_Countries_Regions" FromRole="Regions" ToRole="Countries" />
+  </EntityType>
+  <Association Name="FK_Countries_Cities">
+    <End Role="Cities" Type="Self.City" Multiplicity="1" />
+    <End Role="Countries" Type="Self.Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Countries">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Countries_Regions">
+    <End Role="Regions" Type="Self.Region" Multiplicity="1" />
+    <End Role="Countries" Type="Self.Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Countries">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CRMCountriesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Regions" EntityType="Self.Region" />
+    <AssociationSet Name="FK_Countries_Cities" Association="Self.FK_Countries_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Countries" EntitySet="Countries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Countries_Regions" Association="Self.FK_Countries_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Countries" EntitySet="Countries" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
